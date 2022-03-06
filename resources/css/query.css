@@ -1,4 +1,11 @@
-
+@media (min-width: 1246px) {
+  .wrapper {
+    width: 25%;
+  }
+  .container {
+    text-align: center;
+  }
+}
 @media (max-width: 1245px) {
     nav{
       padding: 0 50px;
@@ -6,6 +13,9 @@
     header .content h1 {
       font-size: 28px;
       padding-bottom: 12px;
+    }
+    .wrapper {
+      width: 33.33%;
     }
   }
   @media (max-width: 1140px){

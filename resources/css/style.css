@@ -19,6 +19,7 @@ header {
   background-position: center;
 }
 
+
 /******* NAVBAR   ********/ 
 nav{
   display: flex;
@@ -29,6 +30,7 @@ nav{
   width: 100%;
   padding: 0 100px;
   position: fixed;
+  margin-bottom: 20px;
 }
 nav .logo{
   font-size: 36px;
@@ -107,7 +109,7 @@ a:visited{
     color: #000;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #3376bc;
+    border-bottom: 1px solid transparent;
     transition: border-bottom 0.2s, color 0.2s;
 }
 a:hover,
@@ -160,4 +162,62 @@ a:active {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 18px;
+}
+
+/******* ABOUT PAGE   ********/ 
+.social-links a .fa-facebook:hover,
+.social-links a .fa-facebook:active{
+  color: rgb(45, 45, 250);
+  
+}
+
+/******* ABOUT PAGE   ********/ 
+.about-header{
+  text-align: center;
+  margin: 20px auto;
+  top: calc(100vh - 15vh);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  background-color: #efefef;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  
+}
+
+.teams img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+.teams .name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.teams .role {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+.teams .about {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+.wrapper .social-links a {
+  padding: 4px;
+  font-size: 25px;
 }
