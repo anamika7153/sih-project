@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Query</title>
-      
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-      <link rel="stylesheet" href="resources/css/style.css">
-      <link rel="stylesheet" href="resources/css/query.css">
-   </head>
-   <body>
-      <header>
-         <nav>
+
+<head>
+   <meta charset="utf-8">
+   <title>Query</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="resources/css/style.css">
+   <link rel="stylesheet" href="resources/css/query.css">
+</head>
+
+<body>
+   <header>
+      <nav>
+         
             <div class="menu-icon">
                <span class="fas fa-bars"></span>
             </div>
@@ -20,7 +25,7 @@
             </div>
             <div class="nav-items">
                <li><a href="#">Home</a></li>
-               <li><a href="about.html">About</a></li>
+               <li><a href="#aboutus">About</a></li>
                <li><a href="#">Contact</a></li>
             </div>
             <div class="search-icon">
@@ -33,42 +38,219 @@
                <input type="search" class="search-data" placeholder="Search" required>
                <button type="submit" class="fas fa-search"></button>
             </form>
-         </nav>
-         <div class="content">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <a href="#" class="btn btn-adm">Admission</a>
-            <a href="#" class="btn btn-jobs">Jobs</a>
-         </div>
-      </header>
-      
-     
+
+      </nav>
+      <div class="content">
+         <h1>Lorem ipsum dolor sit amet.</h1>
+         <h1>Lorem ipsum dolor sit amet.</h1>
+         <a href="#pred-adm" class="btn btn-adm">Admission</a>
+         <a href="#pred-jobs" class="btn btn-jobs">Jobs</a>
       </div>
-      <script>
-         const menuBtn = document.querySelector(".menu-icon span");
-         const searchBtn = document.querySelector(".search-icon");
-         const cancelBtn = document.querySelector(".cancel-icon");
-         const items = document.querySelector(".nav-items");
-         const form = document.querySelector("form");
-         menuBtn.onclick = ()=>{
-           items.classList.add("active");
-           menuBtn.classList.add("hide");
-           searchBtn.classList.add("hide");
-           cancelBtn.classList.add("show");
-         }
-         cancelBtn.onclick = ()=>{
-           items.classList.remove("active");
-           menuBtn.classList.remove("hide");
-           searchBtn.classList.remove("hide");
-           cancelBtn.classList.remove("show");
-           form.classList.remove("active");
-           cancelBtn.style.color = "#000";
-         }
-         searchBtn.onclick = ()=>{
-           form.classList.add("active");
-           searchBtn.classList.add("hide");
-           cancelBtn.classList.add("show");
-         }
-      </script>
-   </body>
+   </header>
+   <section class="form-section js-form-section">
+      <div class="row">
+         <div class="details-form">
+            <div class="adm-form" id="pred-adm">
+               <div class="title">Predict your college</div>
+               <form class="form" action="#">
+                  <div class="input-field">
+                     <label for="">Enter your Score</label>
+                     <input type="text" class="input">
+                  </div>
+                  <div class="input-field">
+                     <label for="">Enter your PCM %</label>
+                     <input type="text" class="input">
+                  </div>
+                  <div class="input-field">
+                     <label for="">Enter your rank</label>
+                     <input type="text" class="input">
+                  </div>
+                  <div class="input-field">
+                     <label for="">State</label>
+                     <div class="custom-select">
+                        <select name="" id="">
+                           <option value="">Select</option>
+                           <option value="UP">UP</option>
+                           <option value="Delhi">Delhi</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="input-field">
+                     <label for="">City</label>
+                     <div class="custom-select">
+                        <select name="" id="">
+                           <option value="">Select</option>
+                           <option value="Ghaziabad">Ghaziabad</option>
+                           <option value="Kanpur">Kanpur</option>
+                           <option value="Delhi">Delhi</option>
+                           <option value="Lucknow">Lucknow</option>
+                           <option value="Lucknow">Aligarh</option>
+                           <option value="Lucknow">Noida</option>
+                        </select>
+                     </div>
+                  </div>
+                  <button class="predict-btn" type="submit">Predict</button>
+
+               </form>
+            </div>
+            <div class="jobs-form" id="pred-jobs">
+               <div class="title">Predict your Company</div>
+               <form class="form" action="#">
+                  <div class="input-field">
+                     <label for="">Enter your CGPA</label>
+                     <input type="text" class="input">
+                  </div>
+                  <div class="input-field">
+                     <label for="">Experience in years</label>
+                     <input type="text" class="input">
+                  </div>
+                  <div class="input-field">
+                     <label for="">State</label>
+                     <div class="custom-select">
+                        <select name="" id="">
+                           <option value="">Select</option>
+                           <option value="UP">UP</option>
+                           <option value="Delhi">Delhi</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="input-field">
+                     <label for="">City</label>
+                     <div class="custom-select">
+                        <select name="" id="">
+                           <option value="">Select</option>
+                           <option value="Ghaziabad"></option>
+                           <option value="Kanpur"></option>
+                           <option value="Delhi"></option>
+                           <option value="Lucknow"></option>
+                        </select>
+                     </div>
+                  </div>
+                  <button class="predict-btn" type="submit">Predict</button>
+
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="aboutus">
+      <div class="about-header" >
+         <h1>Our Team</h1>
+     </div>
+     <div class="container">
+         <div class="wrapper">
+             <div class="teams">
+                 <img src="resources/img/adm1.jpg" height="50px" alt="">
+                 <div class="name">Adeel Parvez</div>
+                 <div class="role">Developer</div>
+                 <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veritatis quae molestias provident voluptatibus eos architecto natus dolor voluptate inventore.</div>
+             </div>
+             <div class="social-links">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-github"></i></a>
+             </div>
+         </div>
+         <div class="wrapper">
+             <div class="teams">
+                 <img src="resources/img/adm2.jpg" height="50px" alt="">
+                 <div class="name">Anamika Yadav</div>
+                 <div class="role">Designer</div>
+                 <div class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ut odit repudiandae. Aliquam vitae, aperiam itaque commodi magnam inventore voluptatem.</div>
+             </div>
+             <div class="social-links">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-github"></i></a>
+             </div>
+         </div>
+         <div class="wrapper">
+             <div class="teams">
+                 <img src="resources/img/adm3.jpg" height="50px" alt="">
+                 <div class="name">Adesh Pandey</div>
+                 <div class="role">Manager</div>
+                 <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat quibusdam nisi quas ipsam ullam aliquid adipisci officia fugit corrupti!</div>
+             </div>
+             <div class="social-links">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-github"></i></a>
+             </div>
+         </div>
+ 
+         <div class="wrapper">
+             <div class="teams">
+                 <img src="resources/img/adm1.jpg" height="50px" alt="">
+                 <div class="name">Aley Ahmed Naqvi</div>
+                 <div class="role">Developer</div>
+                 <div class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quo rem, optio autem cumque id mollitia animi nulla! Fugit, repudiandae.</div>
+             </div>
+             <div class="social-links">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-github"></i></a>
+             </div>
+         </div>
+         <div class="wrapper">
+             <div class="teams">
+                 <img src="resources/img/adm2.jpg" height="50px" alt="">
+                 <div class="name">Anamika Yadav</div>
+                 <div class="role">Designer</div>
+                 <div class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ut odit repudiandae. Aliquam vitae, aperiam itaque commodi magnam inventore voluptatem.</div>
+             </div>
+             <div class="social-links">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-github"></i></a>
+             </div>
+         </div>
+         <div class="wrapper">
+             <div class="teams">
+                 <img src="resources/img/adm3.jpg" height="50px" alt="">
+                 <div class="name">Adesh Pandey</div>
+                 <div class="role">Manager</div>
+                 <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat quibusdam nisi quas ipsam ullam aliquid adipisci officia fugit corrupti!</div>
+             </div>
+             <div class="social-links">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-github"></i></a>
+             </div>
+         </div>
+ 
+     </div>
+   </section>
+
+
+   <script>
+      
+const menuBtn = document.querySelector(".menu-icon span");
+const searchBtn = document.querySelector(".search-icon");
+const cancelBtn = document.querySelector(".cancel-icon");
+const items = document.querySelector(".nav-items");
+const form = document.querySelector("form");
+menuBtn.onclick = () => {
+   items.classList.add("active");
+   menuBtn.classList.add("hide");
+   searchBtn.classList.add("hide");
+   cancelBtn.classList.add("show");
+}
+cancelBtn.onclick = () => {
+   items.classList.remove("active");
+   menuBtn.classList.remove("hide");
+   searchBtn.classList.remove("hide");
+   cancelBtn.classList.remove("show");
+   form.classList.remove("active");
+   cancelBtn.style.color = "#000";
+}
+searchBtn.onclick = () => {
+   form.classList.add("active");
+   searchBtn.classList.add("hide");
+   cancelBtn.classList.add("show");
+}
+   </script>
+
+   
+</body>
+
 </html>
