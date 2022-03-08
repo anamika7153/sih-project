@@ -47,92 +47,7 @@
          <a href="#pred-jobs" class="btn btn-jobs">Jobs</a>
       </div>
    </header>
-   <section class="form-section js-form-section">
-      <div class="row">
-         <div class="details-form">
-            <div class="adm-form" id="pred-adm">
-               <div class="title">Predict your college</div>
-               <form class="form" action="#">
-                  <div class="input-field">
-                     <label for="">Enter your Score</label>
-                     <input type="text" class="input">
-                  </div>
-                  <div class="input-field">
-                     <label for="">Enter your PCM %</label>
-                     <input type="text" class="input">
-                  </div>
-                  <div class="input-field">
-                     <label for="">Enter your rank</label>
-                     <input type="text" class="input">
-                  </div>
-                  <div class="input-field">
-                     <label for="">State</label>
-                     <div class="custom-select">
-                        <select name="" id="">
-                           <option value="">Select</option>
-                           <option value="UP">UP</option>
-                           <option value="Delhi">Delhi</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="input-field">
-                     <label for="">City</label>
-                     <div class="custom-select">
-                        <select name="" id="">
-                           <option value="">Select</option>
-                           <option value="Ghaziabad">Ghaziabad</option>
-                           <option value="Kanpur">Kanpur</option>
-                           <option value="Delhi">Delhi</option>
-                           <option value="Lucknow">Lucknow</option>
-                           <option value="Lucknow">Aligarh</option>
-                           <option value="Lucknow">Noida</option>
-                        </select>
-                     </div>
-                  </div>
-                  <button class="predict-btn" type="submit">Predict</button>
-
-               </form>
-            </div>
-            <div class="jobs-form" id="pred-jobs">
-               <div class="title">Predict your Company</div>
-               <form class="form" action="#">
-                  <div class="input-field">
-                     <label for="">Enter your CGPA</label>
-                     <input type="text" class="input">
-                  </div>
-                  <div class="input-field">
-                     <label for="">Experience in years</label>
-                     <input type="text" class="input">
-                  </div>
-                  <div class="input-field">
-                     <label for="">State</label>
-                     <div class="custom-select">
-                        <select name="" id="">
-                           <option value="">Select</option>
-                           <option value="UP">UP</option>
-                           <option value="Delhi">Delhi</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="input-field">
-                     <label for="">City</label>
-                     <div class="custom-select">
-                        <select name="" id="">
-                           <option value="">Select</option>
-                           <option value="Ghaziabad"></option>
-                           <option value="Kanpur"></option>
-                           <option value="Delhi"></option>
-                           <option value="Lucknow"></option>
-                        </select>
-                     </div>
-                  </div>
-                  <button class="predict-btn" type="submit">Predict</button>
-
-               </form>
-            </div>
-         </div>
-      </div>
-   </section>
+   
    <section id="aboutus">
       <div class="about-header" >
          <h1>Our Team</h1>
@@ -222,34 +137,10 @@
    </section>
 
 
-   <script>
-      
-const menuBtn = document.querySelector(".menu-icon span");
-const searchBtn = document.querySelector(".search-icon");
-const cancelBtn = document.querySelector(".cancel-icon");
-const items = document.querySelector(".nav-items");
-const form = document.querySelector("form");
-menuBtn.onclick = () => {
-   items.classList.add("active");
-   menuBtn.classList.add("hide");
-   searchBtn.classList.add("hide");
-   cancelBtn.classList.add("show");
-}
-cancelBtn.onclick = () => {
-   items.classList.remove("active");
-   menuBtn.classList.remove("hide");
-   searchBtn.classList.remove("hide");
-   cancelBtn.classList.remove("show");
-   form.classList.remove("active");
-   cancelBtn.style.color = "#000";
-}
-searchBtn.onclick = () => {
-   form.classList.add("active");
-   searchBtn.classList.add("hide");
-   cancelBtn.classList.add("show");
-}
-   </script>
+   <script >
 
+   </script>
+<script src="resources/js/script.js"></script>
    
 </body>
 
